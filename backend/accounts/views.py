@@ -17,7 +17,7 @@ from rest_framework.generics import RetrieveUpdateAPIView
 
 
 class UserAPIView(APIView):
-  permission_classes = [IsAuthenticated]  # ✅ Corrigido
+  permission_classes = [IsAuthenticated]
 
   def get(self, request):
     user = request.user
